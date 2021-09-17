@@ -1,13 +1,14 @@
-# 顔の検知とトラッキング
-## 顔の検知
-- opencvのcascadefileを用いた顔検出
-## 顔のトラッキング
-- 検知した顔をmeanshiftを用いてトラッキング
-- このことによって毎frame顔の検出をする必要がなくなり、トラッキングのスピードが上がる
+## Face detection and tracking
+## Face detection
+- Face detection using opencv's cascadefile.
+## Face tracking
+- Track the detected faces using meanshift.
+- This eliminates the need to detect faces every frame and speeds up tracking.
 ## firebase
-- 検出した(トラッキングした)顔の座標をfirebase経由でdatabaseに追加
-- 別スレッドで処理することによって顔のトラッキングの処理スピードを落とさせないようにする
-## 座標の受け取り
-- javaScriptでfirebaseから顔の座標を受け取る
-## 最終目標
-- 画面内の二次元のキャラクターに顔の座標を適用させることで、自分の顔の動きと連動させる
+- Add the coordinates of detected (tracked) faces to database via firebase.
+- Do not slow down the face tracking process by doing it in a separate thread.
+## Receive coordinates
+- Receive face coordinates from firebase by javaScript.
+## End goal
+- Apply the face coordinates to the two-dimensional character in the screen, and make it work with the movement of your own face.
+
