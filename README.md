@@ -1,4 +1,5 @@
 ## Face detection and tracking
+Face detection and tracking by openCV
 ## Face detection
 - Face detection using opencv's cascadefile.
 ## Face tracking
